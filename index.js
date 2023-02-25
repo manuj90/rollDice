@@ -3,7 +3,6 @@ const rollbtn = document.querySelector('.roll');
 
 const randomDice = () => {
   const random = Math.floor(Math.random() * 10);
-
   if (random >= 1 && random <= 6) {
     rollDice(random);
   } else {
@@ -28,15 +27,14 @@ const rollDice = (random) => {
         dice.style.transform = 'rotateX(90deg) rotateY(0deg)';
         break;
       case 3:
-        dice.style.transform = 'rotateX(180deg) rotateY(90deg)';
+        dice.style.transform = 'rotateX(0deg) rotateY(90deg)';
         break;
       case 4:
-        dice.style.transform = 'rotateX(180deg) rotateY(-90deg)';
+        dice.style.transform = 'rotateX(0deg) rotateY(-90deg)';
         break;
       default:
         break;
     }
-
     dice.style.animation = "none"
   }, 4050);
 };
