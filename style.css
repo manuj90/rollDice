@@ -85,7 +85,7 @@ body {
   transform: rotateX(-90deg) translateZ(50px);
 }
 
-.rigth {
+.right {
   transform: rotateY(90deg) translateZ(50px);
 }
 
